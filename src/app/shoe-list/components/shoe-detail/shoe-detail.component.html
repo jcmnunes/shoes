@@ -1,0 +1,17 @@
+<dialog #dialog>
+  <h2>Add Task</h2>
+  <form>
+    @if (shoe() !== null) {
+      <dl>
+        <dt>Nickname</dt>
+        <dd>{{ shoe()!.nickname }}</dd>
+        <dt>Distance</dt>
+        <dt>{{ shoe()!.distance | number: '1.2-2' }}</dt>
+      </dl>
+    }
+
+    <p class="actions">
+      <button type="button" (click)="onRequestClose()">Cancel</button>
+    </p>
+  </form>
+</dialog>

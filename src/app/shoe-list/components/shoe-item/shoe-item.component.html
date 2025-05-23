@@ -1,0 +1,12 @@
+<article class="shoe-item">
+  <dl>
+    <dt>Nickname</dt>
+    <dd>{{ shoe().nickname }}</dd>
+    <dt>Distance</dt>
+    <dt>{{ shoe().distance | number: '1.2-2' }}</dt>
+  </dl>
+
+  <button (click)="onOpenShoeDetail()">
+    Details
+  </button>
+</article>
